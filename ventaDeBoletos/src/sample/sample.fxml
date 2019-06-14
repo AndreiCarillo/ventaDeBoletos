@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane style="-fx-background-color:PINK" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <TabPane layoutX="-1.0" layoutY="-2.0" prefHeight="408.0" prefWidth="1070.0" tabClosingPolicy="UNAVAILABLE">
+         <tabs>
+            <Tab text="Compra de Boleto">
+               <content>
+                  <Pane prefHeight="200.0" prefWidth="600.0">
+                     <children>
+                        <Label layoutX="140.0" layoutY="25.0" text="Cliente" />
+                        <TextField fx:id="textA" layoutX="150.0" layoutY="50.0" style="-fx-background-color:POWDERBLUE" />
+                        <Label layoutX="70.0" layoutY="50.0" text="Clave Cliente" />
+                        <TextField fx:id="textB" layoutX="150.0" layoutY="90.0" style="-fx-background-color:POWDERBLUE"/>
+                        <Label layoutX="70.0" layoutY="90.0" text="Nombre"  />
+                        <TextField fx:id="textC" layoutX="150.0" layoutY="130.0" style="-fx-background-color:POWDERBLUE" />
+                        <Label layoutX="70.0" layoutY="130.0" text="Apellidos" />
+                        <TextField fx:id="textD" layoutX="150.0" layoutY="170.0" style="-fx-background-color:POWDERBLUE" />
+                        <Label layoutX="70.0" layoutY="170.0" text="Direccion" />
+                        <Label layoutX="440.0" layoutY="25.0" text="Boleto" />
+                        <TextField fx:id="textE" layoutX="425.0" layoutY="50.0" style="-fx-background-color:POWDERBLUE"/>
+                        <Label layoutX="350.0" layoutY="50.0" text="no. Boleto" />
+                        <Label layoutX="350.0" layoutY="90.0" text="Pagado" />
+                        <ComboBox fx:id="combo1" layoutX="425.0" layoutY="90.0" prefWidth="150.0" style="-fx-background-color:CYAN" />
+                        <Label layoutX="350.0" layoutY="140.0" text="Fecha"/>
+                        <Label fx:id="label1" layoutX="425.0" layoutY="140.0" prefHeight="17.0" prefWidth="108.0" text="Label" />
+                        <Label layoutX="840.0" layoutY="25.0" text="Seccion" />
+                        <TextField fx:id="textF" layoutX="775.0" layoutY="50.0" style="-fx-background-color:POWDERBLUE" />
+                        <Label layoutX="700.0" layoutY="50.0" text="SeccionId"/>
+                        <TextField fx:id="textG" layoutX="775.0" layoutY="90.0" style="-fx-background-color:POWDERBLUE"/>
+                        <Label layoutX="700.0" layoutY="90.0" text="Descripcion" />
+                        <TextField fx:id="textH" layoutX="775.0" layoutY="130.0" style="-fx-background-color:POWDERBLUE" />
+                        <Label layoutX="700.0" layoutY="130.0" text="Precio" />
+                        <Button fx:id="boton1" layoutX="514.0" layoutY="336.0" mnemonicParsing="false" text="Agregar Venta" style="-fx-background-color:CYAN"/>
+                     </children>
+                  </Pane>
+               </content>
+            </Tab>
+            <Tab text="Tablas ">
+               <content>
+                  <Pane prefHeight="250.0" prefWidth="500.0">
+                     <children>
+                        <TableView fx:id="table" layoutX="14.0" layoutY="39.0" prefHeight="314.0" prefWidth="1040.0" style="-fx-background-color: BROWN">
+                           <columns>
+                              <TableColumn prefWidth="75.0" text="C1" />
+                              <TableColumn prefWidth="75.0" text="C2" />
+                           </columns>
+                        </TableView>
+                     </children>
+                  </Pane>
+               </content>
+            </Tab>
+         </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>
